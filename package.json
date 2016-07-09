@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "description": "Creating an api to retrieve my own person resume",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "supertest": "^1.2.0"
+  },
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "project3b"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "ARIEL TAY",
+  "license": "MIT"
 }
