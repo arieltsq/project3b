@@ -2,10 +2,10 @@
 
 Creating an api based on node js for retrieving information on my resume
 
-**Technology used:** 
+**Technology used:**
 + Node
-+ Express framework
++ Express backend framework
 
 **For Testing:**
-+ Chai 
++ Chai
 + Super test
