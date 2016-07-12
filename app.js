@@ -4,6 +4,9 @@ const port = process.env.PORT || 3000
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const router = require('./config/routes')
+const mongoose = require('mongoose')
+
+mongoose.connect(process.env.MONOGOB_URI)
 
 app.use(morgan('dev'))
 
