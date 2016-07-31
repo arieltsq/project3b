@@ -23,6 +23,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node models/seed.js"
   },
+    "engines": {
+      "node": "6.2.2"
+    },
   "repository": {
     "type": "git",
     "url": "project3b"
