@@ -10,13 +10,16 @@ const ProfileSchema = mongoose.Schema({
   linkedIn: {type: String}
 })
 
-ProfileSchema.set('toJson', {
+ProfileSchema.set('toJSON', {
   transform: function (doc, ret, options) {
     return {
       id: ret._id,
       name: `${ret.first_name} ${ret.last_name}`,
       picture: ret.picture,
-      tagline: ret.tagline
+      tagline: ret.tagline,
+      github: ret.github_profile,
+      email: ret.email,
+      linkedIN: ret.linkedIn
     }
   }
 })
