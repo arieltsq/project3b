@@ -52,11 +52,11 @@ var data = [
     'documents': [
       {'name': 'Html', 'score': '8', 'category': 'technical'},
       {'name': 'CSS', 'score': '8', 'category': 'technical'},
-      {'name': 'Javascript', 'skills': '6.5', 'category': 'technical'},
-      {'name': 'C#', 'skills': '7', 'category': 'technical'},
-      {'name': 'Java', 'skills': '4.5', 'category': 'technical'},
-      {'name': 'Ruby', 'skills': '7', 'category': 'technical'},
-      {'name': 'Node', 'skills': '6', 'category': 'technical'}
+      {'name': 'Javascript', 'score': '6.5', 'category': 'technical'},
+      {'name': 'C#', 'score': '7', 'category': 'technical'},
+      {'name': 'Java', 'score': '4.5', 'category': 'technical'},
+      {'name': 'Ruby', 'score': '7', 'category': 'technical'},
+      {'name': 'Node', 'score': '6', 'category': 'technical'}
     ]
   },
   {
