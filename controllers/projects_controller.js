@@ -7,7 +7,7 @@ function listProjects (req, res) {
     const fewProjects = []
     for (let i = 0; i < projectsArray.length; ++i) {
       fewProjects.push({
-        id: projectsArray[i].id,
+        _id: projectsArray[i].id,
         name: projectsArray[i].name,
         githubLink: projectsArray[i].github_link,
         htmlLink: projectsArray[i].html_link })

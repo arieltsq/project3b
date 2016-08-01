@@ -6,7 +6,7 @@ function listWorks (req, res) {
     const fewWork = []
     for (let i = 0; i < workArray.length; ++i) {
       fewWork.push({
-        id: workArray[i].id,
+        _id: workArray[i].id,
         company: workArray[i].company,
         role: workArray[i].role,
         startMonthyear: workArray[i].start_monthyear,

@@ -6,7 +6,7 @@ function listskills (req, res) {
     const fewskills = []
     for (let i = 0; i < skillsArray.length; ++i) {
       fewskills.push({
-        id: skillsArray[i].id,
+        _id: skillsArray[i].id,
         name: skillsArray[i].name,
         score: skillsArray[i].score,
         category: skillsArray[i].category
