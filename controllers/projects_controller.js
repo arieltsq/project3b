@@ -12,7 +12,7 @@ function listProjects (req, res) {
         githubLink: projectsArray[i].github_link,
       htmlLink: projectsArray[i].html_link })
     }
-    res.status(200).json(fewProjects)
+    res.status(200).json({projects: fewProjects})
   })
 }
 function showProjects (req, res) {

@@ -12,7 +12,7 @@ function listskills (req, res) {
         category: skillsArray[i].category
       })
     }
-    res.status(200).json(fewskills)
+    res.status(200).json({skills: fewskills})
   })
 }
 function showskills (req, res) {
