@@ -13,7 +13,7 @@ const ProfileSchema = mongoose.Schema({
 ProfileSchema.set('toJSON', {
   transform: function (doc, ret, options) {
     return {
-      id: ret._id,
+      _id: ret._id,
       name: `${ret.first_name} ${ret.last_name}`,
       picture: ret.picture,
       tagline: ret.tagline,
