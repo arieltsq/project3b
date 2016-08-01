@@ -9,8 +9,8 @@ function listWorks (req, res) {
         id: workArray[i].id,
         company: workArray[i].company,
         role: workArray[i].role,
-        start_monthyear: workArray[i].start_monthyear,
-        end_monthyear: workArray[i].end_monthyear })
+        startMonthyear: workArray[i].start_monthyear,
+        endMonthyear: workArray[i].end_monthyear })
     }
     res.status(200).json({works: fewWork})
   })
