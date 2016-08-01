@@ -1,4 +1,5 @@
 const Project = require('../models/project')
+const bodyParser = require('body-parser')
 
 function listProjects (req, res) {
   Project.find((error, projectsArray) => {
@@ -8,8 +9,8 @@ function listProjects (req, res) {
       fewProjects.push({
         id: projectsArray[i].id,
         name: projectsArray[i].name,
-        github_link: projectsArray[i].github_link,
-        html_link: projectsArray[i].html_link })
+        githubLink: projectsArray[i].github_link,
+      htmlLink: projectsArray[i].html_link })
     }
     res.status(200).json(fewProjects)
   })
@@ -21,7 +22,22 @@ function showProjects (req, res) {
     res.status(200).json(project)
   })
 }
+
+function updateProjects (req, res) {
+  const id = req.params.id
+  Project.findById({_id: id}, function (err, project) {
+    if (err || !project) return res.status(401).json({error: '/get editProject error'})
+    if (req.body.name) project.name = req.body.name
+    if (req.body.github) project.github_link = req.body.github
+    if (req.body.html) project.html_link = req.body.html
+    project.save((err) => {
+      if (err) return res.status(401).json({error: err})
+      res.status(200).json({message: 'Project updated', project})
+    })
+  })
+}
 module.exports = {
   index: listProjects,
-  show: showProjects
+  show: showProjects,
+  update: updateProjects
 }

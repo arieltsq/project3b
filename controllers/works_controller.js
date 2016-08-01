@@ -22,7 +22,23 @@ function showWork (req, res) {
     res.status(200).json(work)
   })
 }
+function updateWork (req, res) {
+  const id = req.params.id
+  Work.findById({_id: id}, function (err, work) {
+    if (err || !work) return res.status(401).json({error: '/get editProject error'})
+    if (req.body.company) work.company = req.body.company
+    if (req.body.role) work.role = req.body.role
+    if (req.body.startMonthyear) work.startMonthyear = req.body.startMonthyear
+    if (req.body.endMonthyear) work.endMonthyear = req.body.endMonthyear
+
+    work.save((err) => {
+      if (err) return res.status(401).json({error: err})
+      res.status(200).json({works: 'Work updated', work})
+    })
+  })
+}
 module.exports = {
   index: listWorks,
-  show: showWork
+  show: showWork,
+  update: updateWork
 }

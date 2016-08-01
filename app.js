@@ -11,7 +11,6 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.use(morgan('dev'))
 
-app.use(router)
 
 // save images in the public folder
 app.use(express.static('public'))
@@ -22,6 +21,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }))
 
+
+// app.use(router)
 app.use('/', router)
 
 // CATCHING ERRORS

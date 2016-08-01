@@ -23,12 +23,14 @@ router.get('/', (req, res) => {
 // Keep project routes in a seperate controller file
 router.get('/projects', projectsController.index)
 router.get('/projects/:id', projectsController.show)
+router.put('/projects/:id', projectsController.update)
 
 router.get('/skills', skillsController.index)
 router.get('/skills/:id', skillsController.show)
 
 router.get('/works', worksController.index)
 router.get('/works/:id', worksController.show)
+router.put('/works/:id', worksController.update)
 
 // export the router so the main app can access it
 module.exports = router
