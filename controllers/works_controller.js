@@ -12,7 +12,7 @@ function listWorks (req, res) {
         start_monthyear: workArray[i].start_monthyear,
         end_monthyear: workArray[i].end_monthyear })
     }
-    res.status(200).json(fewWork)
+    res.status(200).json({works: fewWork})
   })
 }
 function showWork (req, res) {
