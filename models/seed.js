@@ -36,15 +36,15 @@ var data = [
   {
     'model': 'Project',
     'documents': [
-      {'name': 'Biography', 'github': 'https://github.com/arieltsq/biography', 'html': 'http://arieltsq.github.io/biography/', 'img': ''},
-      {'name': 'Tic Tac Toe with Simple Computer AI', 'github': 'https://github.com/arieltsq/TicTacToe_AI', 'html': 'http://arieltsq.github.io/TicTacToe_AI', 'img': ''},
-      {'name': 'Tic Tac Toe', 'github': 'https://github.com/arieltsq/TicTacToe', 'html': 'http://arieltsq.github.io/TicTacToe/', 'img': ''},
-      {'name': 'How Well Do You Know Singapore? (Quiz)', 'github': 'https://github.com/arieltsq/Project1A', 'html': 'http://arieltsq.github.io/Project1A', 'img': ''},
-      {'name': 'Unicorn the Thief vs Space Police (Canvas Game)', 'github': 'https://github.com/arieltsq/Project1B', 'html': 'http://arieltsq.github.io/Project1B', 'img': ''},
-      {'name': 'Wikipedia Tribute to Snoopy', 'github': 'https://github.com/arieltsq/wiki', 'html': 'https://snoopy-tribute.herokuapp.com/', 'img': ''},
-      {'name': 'Bloglah! (Blog)', 'github': 'https://github.com/arieltsq/Blog', 'html': 'https://project2a-blog.herokuapp.com/', 'img': ''},
-      {'name': 'Resummary', 'github': 'https://github.com/arieltsq/Resummary', 'html': 'https://resummary.herokuapp.com', 'img': ''},
-      {'name': 'My Dashboard (API)', 'github': 'https://github.com/arieltsq/dashboard', 'html': 'https://arieltsq.github.io/dashboard/', 'img': ''}
+      {'name': 'Biography', 'github': 'https://github.com/arieltsq/biography', 'html': 'http://arieltsq.github.io/biography/', 'img': 'images/project1.png'},
+      {'name': 'Tic Tac Toe with Simple Computer AI', 'github': 'https://github.com/arieltsq/TicTacToe_AI', 'html': 'http://arieltsq.github.io/TicTacToe_AI', 'img': 'images/project2.png'},
+      {'name': 'Tic Tac Toe', 'github': 'https://github.com/arieltsq/TicTacToe', 'html': 'http://arieltsq.github.io/TicTacToe/', 'img': 'images/project3.png'},
+      {'name': 'How Well Do You Know Singapore? (Quiz)', 'github': 'https://github.com/arieltsq/Project1A', 'html': 'http://arieltsq.github.io/Project1A', 'img': 'images/project4.png'},
+      {'name': 'Unicorn the Thief vs Space Police (Canvas Game)', 'github': 'https://github.com/arieltsq/Project1B', 'html': 'http://arieltsq.github.io/Project1B', 'img': 'images/project5.png'},
+      {'name': 'Wikipedia Tribute to Snoopy', 'github': 'https://github.com/arieltsq/wiki', 'html': 'https://snoopy-tribute.herokuapp.com/', 'img': 'images/project6.png'},
+      {'name': 'Bloglah! (Blog)', 'github': 'https://github.com/arieltsq/Blog', 'html': 'https://project2a-blog.herokuapp.com/', 'img': 'images/project7.png'},
+      {'name': 'Resummary', 'github': 'https://github.com/arieltsq/Resummary', 'html': 'https://resummary.herokuapp.com', 'img': 'images/project8.png'},
+      {'name': 'My Dashboard (API)', 'github': 'https://github.com/arieltsq/dashboard', 'html': 'https://arieltsq.github.io/dashboard/', 'img': 'images/project9.png'}
     ]
   },
   {
