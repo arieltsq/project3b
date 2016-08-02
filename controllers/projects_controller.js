@@ -28,10 +28,10 @@ function listProjects (req, res) {
     Project.findById({_id: id}, function (err, project) {
       if (err || !project) return res.status(401).json({error: '/get editProject error'})
       console.log(req.body)
-      if (req.body.name) project.name = req.body.name
-      if (req.body.github) project.github = req.body.github
-      if (req.body.html) project.html = req.body.html
-      if (req.body.img) project.img = req.body.img
+      if (req.body.project.name) project.name = req.body.project.name
+      if (req.body.project.github) project.github = req.body.project.github
+      if (req.body.project.html) project.html = req.body.project.html
+      if (req.body.project.img) project.img = req.body.project.img
       project.save((err) => {
         if (err) return res.status(401).json({error: err})
         res.status(200).json({project: project})
