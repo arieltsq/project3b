@@ -27,6 +27,7 @@ function listProjects (req, res) {
     const id = req.params.id
     Project.findById({_id: id}, function (err, project) {
       if (err || !project) return res.status(401).json({error: '/get editProject error'})
+      console.log(req.body)
       if (req.body.name) project.name = req.body.name
       if (req.body.github) project.github = req.body.github
       if (req.body.html) project.html = req.body.html
