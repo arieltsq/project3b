@@ -33,7 +33,7 @@ function listProjects (req, res) {
       if (req.body.img) project.img = req.body.img
       project.save((err) => {
         if (err) return res.status(401).json({error: err})
-        res.status(200).json({message: 'Project updated', project})
+        res.status(200).json({project: project})
       })
     })
   }
