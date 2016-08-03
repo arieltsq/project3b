@@ -10,7 +10,8 @@ function listWorks (req, res) {
         company: workArray[i].company,
         role: workArray[i].role,
         startMonthyear: workArray[i].start_monthyear,
-        endMonthyear: workArray[i].end_monthyear })
+        endMonthyear: workArray[i].end_monthyear,
+        img: workArray[i].img })
     }
     res.status(200).json({works: fewWork})
   })
@@ -30,7 +31,7 @@ function updateWork (req, res) {
     if (req.body.role) work.role = req.body.role
     if (req.body.startMonthyear) work.startMonthyear = req.body.startMonthyear
     if (req.body.endMonthyear) work.endMonthyear = req.body.endMonthyear
-
+    if (req.body.img) work.img = req.body.img
     work.save((err) => {
       if (err) return res.status(401).json({error: err})
       res.status(200).json({works: 'Work updated', work})
