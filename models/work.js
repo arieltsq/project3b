@@ -5,7 +5,8 @@ const WorkSchema = mongoose.Schema({
   role: { type: String },
   start_monthyear: { type: String },
   end_monthyear: { type: String },
-  img: { type: String }
+  img: { type: String },
+  index: {type: Number}
 })
 
 module.exports = mongoose.model('Work', WorkSchema)

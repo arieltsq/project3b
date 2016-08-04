@@ -62,10 +62,10 @@ var data = [
   {
     'model': 'Work',
     'documents': [
-      {'company': 'General Assembly', 'role': 'Web Development Immersive', 'start_monthyear': 'May 2016', 'end_monthyear': 'August 2016', 'img': 'images/ga.jpg'},
-      {'company': 'Brainchild Pte Ltd', 'role': 'Account Manager', 'start_monthyear': 'March 2016', 'end_monthyear': 'May 2016', 'img': 'images/bc.jpg'},
-      {'company': 'Impetus Marketing Group Pte Ltd', 'role': 'Account Executive', 'start_monthyear': 'September  2015', 'end_monthyear': 'February 2016', 'img': 'images/img.jpg'},
-      {'company': 'ST Electronics (Info-Software Systems)', 'role': 'Software Engineer', 'start_monthyear': 'August 2011', 'end_monthyear': 'October 2011', 'img': 'images/ST.jpg'}
+      {'company': 'General Assembly', 'role': 'Web Development Immersive', 'start_monthyear': 'May 2016', 'end_monthyear': 'August 2016', 'img': 'images/ga.jpg', 'index': '1'},
+      {'company': 'Brainchild Pte Ltd', 'role': 'Account Manager', 'start_monthyear': 'March 2016', 'end_monthyear': 'May 2016', 'img': 'images/bc.jpg', 'index': '2' },
+      {'company': 'Impetus Marketing Group Pte Ltd', 'role': 'Account Executive', 'start_monthyear': 'September  2015', 'end_monthyear': 'February 2016', 'img': 'images/img.jpg', 'index': '3' },
+      {'company': 'ST Electronics (Info-Software Systems)', 'role': 'Software Engineer', 'start_monthyear': 'August 2011', 'end_monthyear': 'October 2011', 'img': 'images/ST.jpg', 'index': '4' }
     ]
   }
 ]
