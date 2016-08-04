@@ -44,7 +44,11 @@ var data = [
       {'name': 'Wikipedia Tribute to Snoopy', 'github': 'https://github.com/arieltsq/wiki', 'html': 'https://snoopy-tribute.herokuapp.com/', 'img': 'images/project6.png'},
       {'name': 'Bloglah! (Blog)', 'github': 'https://github.com/arieltsq/Blog', 'html': 'https://project2a-blog.herokuapp.com/', 'img': 'images/project7.png'},
       {'name': 'Resummary', 'github': 'https://github.com/arieltsq/Resummary', 'html': 'https://resummary.herokuapp.com', 'img': 'images/project8.png'},
-      {'name': 'My Dashboard (API)', 'github': 'https://github.com/arieltsq/dashboard', 'html': 'https://arieltsq.github.io/dashboard/', 'img': 'images/project9.png'}
+      {'name': 'My Dashboard (API)', 'github': 'https://github.com/arieltsq/dashboard', 'html': 'https://arieltsq.github.io/dashboard/', 'img': 'images/project9.png'},
+      {'name': 'TOlOMKAN', 'github': 'https://github.com/arieltsq/tolomakan-html', 'html': 'https://arieltsq.github.io/tolomakan-html/', 'img': 'images/project10.png'},
+      {'name': 'Chat App (Socket IO)', 'github': 'https://github.com/arieltsq/ChatApp_Ember', 'html': 'https://ariel-chat.herokuapp.com/chat', 'img': 'images/project11.png'},
+      {'name': '{/Ariel}', 'github': 'https://github.com/arieltsq/AjaxResume', 'html': 'https://arieltay.com', 'img': 'images/project12.png'}
+
     ]
   },
   {
