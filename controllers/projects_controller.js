@@ -32,6 +32,7 @@ function listProjects (req, res) {
       if (req.body.project.github) project.github = req.body.project.github
       if (req.body.project.html) project.html = req.body.project.html
       if (req.body.project.img) project.img = req.body.project.img
+      if(req.body.project.description) project.description = req.body.project.description
       project.save((err) => {
         if (err) return res.status(401).json({error: err})
         res.status(200).json({project: project})

@@ -33,7 +33,7 @@ function updateWork (req, res) {
     if (req.body.startMonthyear) work.startMonthyear = req.body.startMonthyear
     if (req.body.endMonthyear) work.endMonthyear = req.body.endMonthyear
     if (req.body.img) work.img = req.body.img
-    if (req.body.index) work.img = req.body.index
+    if (req.body.index) work.index = req.body.index
     work.save((err) => {
       if (err) return res.status(401).json({error: err})
       res.status(200).json({works: 'Work updated', work})
